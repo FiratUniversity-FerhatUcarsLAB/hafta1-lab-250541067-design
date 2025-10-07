@@ -1,4 +1,59 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541067
+AD-SOYAD:AVŞİN PELİN BİLGİÇ
+BAŞLAT
 
-Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+// 1. Oyunu başlat
+OLUŞTUR boş 3x3 oyun tahtası (9 hücreli liste)
+AYARLA bizim_simgemiz ← 'X'
+AYARLA rakip_simgesi ← 'O'
+
+// 2. Oyun döngüsü
+TEKRAR:
+    // 3. Sıra bizdeyse
+    EĞER sıra bizimse:
+        // 3.1. Kazanabileceğimiz hamle var mı?
+        EĞER herhangi bir boş hücreye X koyduğumuzda 3'lü sıra oluşuyorsa:
+            YAP o hamleyi
+            YAZ "Kazandık!"
+            BİTİR OYUN
+
+        // 3.2. Rakip kazanmak üzere mi? Engelle
+        EĞER rakip bir hamleyle kazanacaksa:
+            KOY o hücreye X (engelle)
+        
+        // 3.3. Merkez hücre boşsa, merkeze oyna
+        EĞER merkez hücre (orta) boşsa:
+            KOY merkeze X
+
+        // 3.4. Köşelerden biri boşsa, bir köşeye oyna
+        EĞER herhangi bir köşe boşsa:
+            KOY X o köşeye
+
+        // 3.5. Kenarlar boşsa, bir kenara oyna
+        EĞER herhangi bir kenar boşsa:
+            KOY X o kenara
+
+    // 4. Sıra rakipteyse
+    DEĞİLSE:
+        BEKLE rakibin hamlesini
+        GÜNCELLE tahta
+
+        // 4.1. Rakip kazandı mı?
+        EĞER rakip 3'lü oluşturduysa:
+            YAZ "Rakip kazandı!"
+            BİTİR OYUN
+
+    // 5. Oyun berabere mi?
+    EĞER tahta tamamen dolduysa:
+        YAZ "Beraberlik!"
+        BİTİR OYUN
+
+    // 6. Sırayı değiştir
+    GEÇ sırayı diğer oyuncuya
+
+SON TEKRAR
+
+BİTİR
+
+
+Bu ödevi chatgptden yardım alarak yaptım.
