@@ -1,4 +1,69 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541067
+AD-SOYAD:AVŞİN PELİN BİLGİÇ
+BAŞLAT
 
-Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+// 1. Rehber verilerini tanımla
+// Her kayıt: "İsim - TelefonNumarası" biçiminde string olacak
+
+TANIMLA rehber ← [
+    "Zeynep - 0555 123 45 67",
+    "Ali - 0532 456 78 90",
+    "Ayşe - 0543 987 65 43",
+    "Mehmet - 0506 111 22 33",
+    "Fatma - 0530 222 33 44"
+]
+
+// 2. Her bir kaydı hem isme hem de telefon numarasına ayır
+// Daha kolay sıralama için ayrı yapılar kullanacağız
+
+OLUŞTUR boş liste: isim_ve_kayit_listesi
+
+HER kayıt İÇİN rehber LİSTESİNDE:
+    // 2.1. Kaydı " - " karakterine göre böl
+    BÖL kayıt'ı " - " karakterine göre → parcalar
+
+    // 2.2. İlk parça: isim, ikinci parça: telefon
+    AYARLA isim ← parcalar[0]
+    AYARLA telefon ← parcalar[1]
+
+    // 2.3. (isim, telefon) çiftini listeye ekle
+    EKLE (isim, telefon) çiftini isim_ve_kayit_listesi'ne
+
+// 3. Şimdi alfabetik olarak isimlere göre sıralayacağız
+// Burada basit bir Bubble Sort algoritması uygulayacağız (mantığı gösterme açısından)
+
+// Toplam kayıt sayısını al
+TANIMLA n ← UZUNLUK( isim_ve_kayit_listesi )
+
+// Sıralama başlasın
+TEKRAR i ← 0'DAN n - 2'YE KADAR:
+    TEKRAR j ← 0'DAN n - i - 2'YE KADAR:
+        // 3.1. Yanyana iki ismi karşılaştır
+        AYARLA isim1 ← isim_ve_kayit_listesi[j].isim
+        AYARLA isim2 ← isim_ve_kayit_listesi[j + 1].isim
+
+        // 3.2. Eğer isim1, isim2'den sonra geliyorsa (yani sıralama yanlışsa)
+        EĞER isim1 > isim2 İSE:
+            // 3.3. Yer değiştir (swap işlemi)
+            TUT geçici_değişken ← isim_ve_kayit_listesi[j]
+            AYARLA isim_ve_kayit_listesi[j] ← isim_ve_kayit_listesi[j + 1]
+            AYARLA isim_ve_kayit_listesi[j + 1] ← geçici_değişken
+
+// 4. Sıralanmış listeyi geri dönüştür (ad - numara formatına)
+// Ekrana yazdırılabilir bir liste oluştur
+
+OLUŞTUR boş liste: siralanmis_rehber
+
+HER (isim, telefon) ÇİFTİ İÇİN isim_ve_kayit_listesi'nde:
+    BİRLEŞTİR isim + " - " + telefon → yeni_kayit
+    EKLE yeni_kayit siralanmis_rehber'e
+
+// 5. Sonucu yazdır
+YAZ "Telefon Rehberi (Alfabetik Sıralı):"
+HER kayit İÇİN siralanmis_rehber LİSTESİNDE:
+    YAZ kayit
+
+BİTİR
+
+
+Bu ödevi chatgptden yardım alarak yaptım.
