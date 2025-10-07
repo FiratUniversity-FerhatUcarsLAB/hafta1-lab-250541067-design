@@ -1,4 +1,42 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541067
+AD-SOYAD:AVŞİN PELİN BİLGİÇ
+BAŞLA
 
-Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+  # 1. MALZEMELERİ HAZIRLA
+  suMiktari ← 250 ml              # Örnek miktar
+  kahveMiktari ← 15 gram          # Orta kavrulmuş kahve için ideal oran
+  kahveÖğütmeDerecesi ← "orta"    # Taze öğütülmüş kahve önerilir
+  demlemeSuresi ← 4 dakika
+
+  # 2. SUYU ISIT
+  YAZ "Suyu 93-96 dereceye kadar ısıt."
+  suSicakligi ← 94 dereceye getir
+
+  # 3. KAHVEYİ ÖĞÜT
+  eğer kahve önceden öğütülmediyse:
+      kahveyi orta öğütme derecesinde öğüt
+
+  # 4. KAHVEYİ DEMLEME ALETİNE KOY
+  kahveyi paketinden çıkarıp bir kaşık yardımıyla filtreye veya french press’e yerleştir
+
+  # 5. SIVI SUYU KAHVENİN ÜZERİNE YAVAŞÇA DÖK
+  yavaşça suyu kahvenin üzerine dök
+  YAZ "Kahvenin tam olarak ıslanmasını sağla."
+
+  # 6. DEMLEME SÜRESİNİ BAŞLAT
+  başla zamanlayıcı (demlemeSuresi)
+
+  # 7. DEMLEME SÜRECİNİ İZLE
+  bekle demlemeSuresi boyunca
+
+  # 8. KAHVEYİ SÜZ VEYA FİLTREDEN AYIR
+  ideal süre olan 4 dakikaya ulaşınca kahveyi süz veya french press ise presle
+
+  # 9. SERVİS YAP
+  kahveyi fincana dök
+  YAZ "Kahven hazır, afiyet olsun!"
+
+BİTİR
+
+
+bu ödevi yaparken chatgtden yardım aldım
