@@ -1,4 +1,69 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541067
+AD-SOYAD:AVŞİN PELİN BİLGİÇ
+BAŞLAT
 
-Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+// 1. Malzemeleri Tanımla
+TANIMLA yumurta_sayisi ← 3
+TANIMLA süt ← 1 yemek kaşığı
+TANIMLA tuz ← 1/4 çay kaşığı
+TANIMLA karabiber ← 1/4 çay kaşığı
+TANIMLA tereyağı ← 1 yemek kaşığı
+
+// Opsiyonel İçindekiler
+TANIMLA rendelenmiş_peynir ← 2 yemek kaşığı
+TANIMLA doğranmış_biber ← 2 yemek kaşığı
+TANIMLA doğranmış_soğan ← 1 yemek kaşığı
+TANIMLA doğranmış_maydanoz ← 1 yemek kaşığı
+
+// 2. Malzemeleri Hazırla
+YAP:
+    KIR yumurtaları bir kaseye ak kısmı kaseye dökülecek şekilde 
+    EKLE kaseye kapağını açtığın sütü ekle
+    EKLE kaseye bir tutam tuz ve karabiber ekle
+    ÇIRP karışımı çatal veya çırpıcı ile homojen hale gelene kadar (yaklaşık 30-45 saniye)
+    HAZIRLA sebzeleri bıçağın keskin tarafıyla doğra  (biber, soğan vs.)
+    RENDELE peyniri ayrı bir tabağa rendele (kullanılıyorsa)
+
+// 3. Tava Hazırlığı
+YAP:
+    SEÇ uygun boyda yapışmaz tava (20-24 cm idealdir)
+    KOY tereyağını bir kaşık yardımıyla tavaya
+    KOY tavaynın alt kısmını ocağa koy 
+    ISIT ocağı orta ateşte
+    ERİT tereyağını, tavayı eşit şekilde yağla
+
+// 4. Sebzeleri Sotele (isteğe bağlı)
+EĞER doğranmış sebzeler VARSA:
+    EKLE sebzeleri tavaya
+    SOTELE 2-3 dakika yumuşayana kadar
+    AL tavadan, ayrı bir kaba koy (ileride tekrar eklemek için)
+
+// 5. Yumurtayı Pişir
+YAP:
+    DÖK çırpılmış yumurtayı sıcak tavaya
+    AZALT ısıyı orta-düşük seviyeye
+    PİŞİR alt kısmı sertleşene kadar (yaklaşık 1-2 dakika)
+    KARIŞTIR hafifçe spatula ile kenarlardan içe doğru, pişmeyen yumurtanın akmasını sağla
+    BEKLE yumurta neredeyse tamamen pişene kadar ama üst yüzey hafif nemli kalmalı
+
+// 6. İç Malzemeleri Ekle
+YAP:
+    EKLE sotelenmiş sebzeleri bir kaşık yardımıyla tabaktan sıyırarak
+    EKLE rendelenmiş peyniri bir kaşık yardımıyla tabaktan sıyırarak
+    EKLE maydanozu bir kaşık yardımıyla tabaktan sıyırarak
+
+// 7. Omleti Katla
+YAP:
+    KATLA omletin bir kenarını diğerinin üzerine spatula yardımıyla
+    PİŞİR 30 saniye daha, peynir eriyene kadar
+
+// 8. Servis Et
+YAP:
+    AL omleti tavadan dikkatlice
+    KOY spatula yardımıyla tabağa
+    SÜSLE maydanoz veya ince doğranmış yeşilliklerle
+    SERVİS ET sıcak olarak
+
+BİTİR
+
+Bu ödevi chatgptden yardım alarak yaptım 
