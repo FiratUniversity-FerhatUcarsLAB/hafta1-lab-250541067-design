@@ -1,4 +1,55 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No:250541067
+AD-SOYAD:AVŞİN PELİN BİLGİÇ
+BAŞLA
 
-Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+  # 1. GİRDİLERİ AL
+  YAZ "Birinci sayıyı girin:"
+  oku sayi1    # string olarak al (büyük sayılar için)
+  
+  YAZ "İkinci sayıyı girin:"
+  oku sayi2    # string olarak al
+
+  # 2. DEĞİŞKENLERİ HAZIRLA
+  sonuc ← boş liste      # ara toplamları tutacak, her eleman bir sayı basamağı gibi
+  geçiciToplam ← 0       # çarpma sırasında kullanılan geçici toplam
+  sıfırSayısı ← 0        # çarpımda ikinci sayının basamak pozisyonuna göre sıfır ekleme sayısı
+  
+  # 3. SAYI2'nin SAĞDAN SOLA BASAMAKLARINI DOLAŞ
+  her basamak2 sağdan sola sayi2 içinde:
+  
+      # 3.1. Geçici toplamı sıfırla
+      geçiciToplam ← boş liste
+      
+      # 3.2. sayi1'i SAĞDAN SOLA dolaş ve her basamağı çarp
+      her basamak1 sağdan sola sayi1 içinde:
+      
+          çarpım ← (basamak1 sayısı) × (basamak2 sayısı) + elde
+          elde ← çarpım böl 10'un tam kısmı
+          basamakSonuç ← çarpım mod 10
+          geçiciToplam'ın başına basamakSonuç ekle
+      
+      SON
+      
+      # Eğer elde kaldıysa, başa ekle
+      eğer elde > 0 ise:
+          geçiciToplam'ın başına elde ekle
+      
+      # 3.3. Geçici toplamın sonuna sıfırSayısı kadar 0 ekle (basamak konumu için)
+      geçiciToplam'ın sonuna sıfırSayısı kadar '0' ekle
+      
+      # 3.4. Geçici toplamı sonucu ekle
+      sonuc ← sonuc + geçiciToplam (büyük sayı toplama işlemi ile)
+      
+      # 3.5. sıfırSayısını artır (basamak kaydırma için)
+      sıfırSayısı ← sıfırSayısı + 1
+
+  SON
+
+  # 4. SONUCU EKRANA YAZDIR
+  YAZ "Çarpım sonucu:"
+  YAZ sonuc (listeyi stringe dönüştür)
+
+BİTİR
+
+
+Bu ödevi yaparken chatgptden yardım aldım
