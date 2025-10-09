@@ -53,3 +53,4 @@ BİTİR
 
 
 Bu ödevi yaparken chatgptden yardım aldım
+"iki büyük sayıyı kağıt kalemle çarpmak için gerekli pseudocodu düzgün bir şekilde ve hiçbir aşamayı atlamadan yaz"
