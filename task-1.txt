@@ -67,3 +67,4 @@ YAP:
 BİTİR
 
 Bu ödevi chatgptden yardım alarak yaptım 
+"Bana hiçbir aşamayı atlamadan olabilecek en düzgün mükemmel omlet tarifini pseudocode kullanarak yaz"
