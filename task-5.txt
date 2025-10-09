@@ -40,3 +40,4 @@ BİTİR
 
 
 bu ödevi yaparken chatgtden yardım aldım
+"kahve yapmak için gereken adımları ayrıntılı bir şekilde pseudocode kullanarak yaz"
