@@ -67,3 +67,4 @@ BİTİR
 
 
 Bu ödevi chatgptden yardım alarak yaptım.
+"telefon rehberini alfabetik olarak sıralayıp bir liste oluşturmak için yapılması gerekenleri pseudocode ile yaz."
