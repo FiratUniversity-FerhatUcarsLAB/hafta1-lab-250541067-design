@@ -57,3 +57,4 @@ BİTİR
 
 
 Bu ödevi chatgptden yardım alarak yaptım.
+"tic tac toe oyununda bütün olasılıkları analiz ederek bir kazanma stratejisi oluştur ve bunu yaparken pseudocode kullan"
